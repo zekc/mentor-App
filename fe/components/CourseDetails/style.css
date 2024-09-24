@@ -1,0 +1,162 @@
+.course-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f4f8; /* Genel arka plan rengini uyumlu yaptık */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Hafif gölge ekledik */
+    font-family: 'Arial', sans-serif;
+}
+
+.course-details h2 {
+    text-align: center;
+    color: #293241; /* Başlık rengi koyu maviye uyumlu */
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.course-details p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #555; /* Yazı rengini biraz daha koyulaştırdık */
+}
+
+.course-details ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.course-details ul li {
+    background-color: #ffffff; /* Beyaz arka plan */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.course-details ul li:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hover ile daha belirgin gölge */
+}
+
+.course-details ul li p {
+    margin: 5px 0;
+}
+
+.course-details button {
+    padding: 12px 18px; /* Buton boyutunu biraz büyüttük */
+    background-color: #3D5A80; /* Buton rengini koyu mavi yaptık */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.course-details button:hover {
+    background-color: #2F4858; /* Hover rengi koyu mavi ton */
+}
+
+.new-phase {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Dikey hizalama */
+    gap: 15px;
+}
+
+.new-phase div {
+    display: flex;
+    align-items: center;
+}
+
+.new-phase label {
+    font-size: 16px;
+    color: #333;
+    margin-right: 10px; /* Etiketler ile inputlar arasına boşluk ekledik */
+}
+
+.new-phase input[type="text"],
+.new-phase input[type="date"] {
+    padding: 12px;
+    width: 250px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.new-phase button {
+    background-color: #3D5A80;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.new-phase button:hover {
+    background-color: #2F4858;
+}
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h3 {
+    color: #293241;
+    margin-bottom: 20px;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.modal-actions button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.modal-actions button:first-of-type {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.modal-actions button:first-of-type:hover {
+    background-color: #388E3C;
+}
+
+.modal-actions button:last-of-type {
+    background-color: #E63946;
+    color: white;
+}
+
+.modal-actions button:last-of-type:hover {
+    background-color: #D32F2F;
+}

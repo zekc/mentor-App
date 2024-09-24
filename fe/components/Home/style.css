@@ -1,0 +1,69 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem; /* Header ile araya boşluk bırakmak için */
+    margin-bottom: 3rem; /* Footer ile araya boşluk bırakmak için */
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 800px; /* İçeriğin genişliğini belirleyin */
+}
+
+.search-section {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.info-section, .login-section {
+    flex: 1;
+    margin: 0 1rem;
+    width: 100%;
+}
+
+.info-section {
+    margin-bottom: 20px;
+    text-align: left; /* Sol tarafa hizalama */
+}
+
+.login-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.login-section input[type="text"],
+.login-section input[type="password"],
+.login-section input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-section button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.login-section button:hover {
+    background-color: #45a049;
+}

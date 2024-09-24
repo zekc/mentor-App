@@ -1,0 +1,120 @@
+.courses-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px; /* Aradaki boşluğu artırdık */
+    background-color: #f0f4f8; /* Arka planı hafif bir mavi tonu ile uyumlu yaptık */
+    width: calc(100% - 40px)
+}
+
+.course-list, .applications-list {
+    width: 100%;
+    background-color: #ffffff; /* Arka planı beyaz yaptık */
+    padding: 20px; /* İç boşluğu artırdık */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Daha yumuşak bir gölge */
+    transition: box-shadow 0.3s ease;
+}
+
+.course-list:hover, .applications-list:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Hover ile daha belirgin gölge */
+}
+
+h3 {
+    text-align: center;
+    color: #293241; /* Başlık rengini koyu maviye uyumlu yaptık */
+    margin-bottom: 20px;
+    font-weight: 600; /* Başlığı daha belirgin yaptık */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+    padding: 15px; /* Padding'i artırdık */
+    border-bottom: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Listedeki her öğeyi hafif gri tonla ayırdık */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+li:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hover'da gölgeyi artırdık */
+}
+
+.application-item {
+    background-color: #ffffff; /* Beyaz arka plan */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Hafif bir gölge ekledik */
+    transition: box-shadow 0.2s ease;
+}
+
+.application-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Hover durumunda gölgeyi artırdık */
+}
+
+.application-item p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #495057; /* Yazı rengini daha okunabilir yaptık */
+}
+
+.application-item strong {
+    font-weight: 600;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.actions button {
+    padding: 8px 15px; /* Düğme boyutunu büyüttük */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease; /* Geçiş efekti ekledik */
+}
+
+.actions button:first-of-type {
+    background-color: #3D5A80; /* Uyumlu bir mavi tonu */
+    color: white;
+}
+
+.actions button:first-of-type:hover {
+    background-color: #2F4858; /* Hover'da koyu mavi yaptık */
+}
+
+.actions button:last-of-type {
+    background-color: #EE6C4D; /* Apply butonuna uyumlu olarak kırmızı ton */
+    color: white;
+}
+
+.actions button:last-of-type:hover {
+    background-color: #E63946; /* Hover'da daha canlı bir kırmızı ton */
+}
+
+/* Detayları Göster butonu stili */
+.course-list button {
+    padding: 8px 15px;
+    font-size: 14px;
+    background-color: #3D5A80; /* Uyumlu mavi ton */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.course-list button:hover {
+    background-color: #2F4858; /* Hover'da daha koyu mavi */
+}

@@ -1,0 +1,52 @@
+header {
+    background-color: #eef4ed;
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Giriş yapmadığında butonları köşelere hizalar */
+    align-items: center;
+}
+
+.navbar-item-left {
+    display: flex;
+    justify-content: flex-start; /* Sol tarafa hizalama */
+}
+
+.navbar-item-right {
+    display: flex;
+    justify-content: flex-end; /* Sağ tarafa hizalama */
+}
+
+.navbar-item a {
+    text-decoration: none;
+    color: #0b2545;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.logout-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.logout-button:hover {
+    background-color: #d32f2f;
+}
